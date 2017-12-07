@@ -1,0 +1,88 @@
+<!--
+  Generated template for the EventosparatiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Eventos para ti</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="fondo">
+
+	<ion-list>
+	<ion-item  *ngFor= " let arte of eventosA" text-wrap >
+
+	    <h2 ><strong><em>Nombre: {{arte.nombre}}</em></strong></h2>
+	    <h2 ><strong><em>Categoria: {{arte.categoria}}</em></strong></h2>
+	    <h2 ><strong><em>Hora: {{arte.hora}}</em></strong></h2>
+	    <h2 ><strong><em>Fecha: {{arte.fecha}}</em></strong></h2>
+
+	    <button ion-button (click)="muestra(arte)" >Mostrar</button>
+
+	</ion-item>
+
+	<ion-item  *ngFor= " let musica of eventosM" text-wrap >
+
+	    <h2 ><strong><em>Nombre: {{musica.nombre}}</em></strong></h2>
+	    <h2 ><strong><em>Categoria: {{musica.categoria}}</em></strong></h2>
+	    <h2 ><strong><em>Hora: {{musica.hora}}</em></strong></h2>
+	    <h2 ><strong><em>Fecha: {{musica.fecha}}</em></strong></h2>
+
+	    <button ion-button (click)="muestra(musica)" >Mostrar</button>
+
+	</ion-item>
+
+	<ion-item  *ngFor= " let tecnologia of eventosT" text-wrap >
+
+	    <h2 ><strong><em>Nombre: {{tecnologia.nombre}}</em></strong></h2>
+	    <h2 ><strong><em>Categoria: {{tecnologia.categoria}}</em></strong></h2>
+	    <h2 ><strong><em>Hora: {{tecnologia.hora}}</em></strong></h2>
+	    <h2 ><strong><em>Fecha: {{tecnologia.fecha}}</em></strong></h2>
+
+	    <button ion-button (click)="muestra(tecnologia)" >Mostrar</button>
+
+	</ion-item>
+
+	<ion-item  *ngFor= " let ciencias of eventosC" text-wrap >
+
+	    <h2 ><strong><em>Nombre: {{ciencias.nombre}}</em></strong></h2>
+	    <h2 ><strong><em>Categoria: {{ciencias.categoria}}</em></strong></h2>
+	    <h2 ><strong><em>Hora: {{ciencias.hora}}</em></strong></h2>
+	    <h2 ><strong><em>Fecha: {{ciencias.fecha}}</em></strong></h2>
+
+	    <button ion-button (click)="muestra(ciencias)" >Mostrar</button>
+
+	</ion-item>
+
+	<ion-item  *ngFor= " let idiomas of eventosI" text-wrap >
+
+	    <h2 ><strong><em>Nombre: {{idiomas.nombre}}</em></strong></h2>
+	    <h2 ><strong><em>Categoria: {{idiomas.categoria}}</em></strong></h2>
+	    <h2 ><strong><em>Hora: {{idiomas.hora}}</em></strong></h2>
+	    <h2 ><strong><em>Fecha: {{idiomas.fecha}}</em></strong></h2>
+
+	    <button ion-button (click)="muestra(idiomas)" >Mostrar</button>
+
+	</ion-item>
+
+	<ion-item  *ngFor= " let letras of eventosL" text-wrap >
+
+	    <h2 ><strong><em>Nombre: {{letras.nombre}}</em></strong></h2>
+	    <h2 ><strong><em>Categoria: {{letras.categoria}}</em></strong></h2>
+	    <h2 ><strong><em>Hora: {{letras.hora}}</em></strong></h2>
+	    <h2 ><strong><em>Fecha: {{letras.fecha}}</em></strong></h2>
+
+	    <button ion-button (click)="muestra(letras)" >Mostrar</button>
+
+	</ion-item>
+
+	</ion-list>
+
+
+</ion-content>
